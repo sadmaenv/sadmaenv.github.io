@@ -1,0 +1,149 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SADMA</title>
+    <!-- Bulma CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- Font Awesome icons  -->
+    <script src="https://kit.fontawesome.com/b165665cab.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container p-3 is-primary">
+        <!-- Title section -->
+        <div class="block is-center has-text-centered">
+            <h1 class="title is-1 is-spaced">SADMA: Scalable Asynchronous Distributed Multi-Agent Reinforcement Learning Training Framework</h1>
+            <div style="font-size:25px;" class="columns is-mobile is-centered is-multiline"> Sizhe Wang*, Long Qian*, Cairun Yi,
+                Fan Wu, Qian Kou,
+                Mingyang Li, Xingyu Chen,Xuguang Lan†
+            </div>
+            <div class="columns is-mobile is-centered is-multiline"> *Equal contribution †Corresponding author
+            </div>
+        </div>
+
+        <div>
+            <p style="text-align:center;"><img src="./resources/images/intro.png" alt="intro"style="width:70%;" /> </p>
+        </div>
+
+        <!-- Icons-->
+        <div class="block is-center has-text-centered">
+            <a class="button is-rounded" href="./resources/article/sadma.pdf">
+                <span class="icon is-small"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i></span>
+                <span>Article</span>
+            </a>
+            <a class="button is-rounded" href="https://github.com/sadmaenv/sadma">
+                <span class="icon is-small"><i class="fa-brands fa-github" aria-hidden="true"></i></span>
+                <span>Code</span>
+            </a>
+        </div>
+
+        <!-- Abstract -->
+        <div class="block box" class="has-text-centered">
+            <div class="has-text-centered">
+                <h2 class="title is-3"> Abstract </h2>
+                <p class="is-size-5">
+                    Multi-agent Reinforcement Learning (MARL) has shown significant success in solving large-scale complex decision-making problems while facing the challenge of increasing computational cost and training time. 
+                    MARL algorithms often require sufficient environment exploration to achieve good performance, especially for complex environments, where the interaction frequency and synchronous training scheme can severelylimit the overall speed. 
+                    Most existing RL training frameworks, which utilize distributed training for acceleration, focus on simple single-agent settings and are not scalable to extend to large-scale MARL scenarios. 
+                    To address this problem, we introduce a Scalable Asynchronous Distributed Multi-Agent RL training framework called SADMA, which modularizes the training process and executes the modules in an asynchronous and distributed manner for efficient training. 
+                    Our framework is power fully scalable and provides an efficient solution for distributed training of multi-agent reinforcement learning in large-scale complex environments.
+                </p>
+            </div>
+        </div>
+
+        <!-- Exp Experiments details  -->
+        <div class="block box is-size-4">
+            <h2 class="title is-3"> Flexible Resource Allocation </h2>
+            <div class="content">
+                Benefiting from the modularized design and unified data transfer interface,
+                each module can be flexibly combined with each other and assigned to different
+                computing nodes in the cluster regardless of the hardware device restrictions.
+                This facilitates deployment on clusters with different resource configurations.
+                Our framework naturally adapts to different resource configurations and thus can
+                fully utilize cluster resources to accelerate training.
+            </div>
+            <div class="block box">
+                <div class="columns is-mobile is-centered is-multiline is-1 is-variable">
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/images/f1.png" alt="out"/>
+                        </figure>
+                    </div>
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/images/f2.png" alt="out"/>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exp Experiments details  -->
+        <div class="block box is-size-4">
+            <h2 class="title is-3"> Experiments </h2>
+            <h2 class="title is-4"> Throughput Comparisons </h2>
+            <div class="content">
+                We compare to baselines under different resource 
+                configurations for single and multiple machines settings.
+            </div>
+            <div class="block box">
+                <div class="columns is-mobile is-centered is-multiline is-1 is-variable">
+
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/images/t1.png" alt="out"/>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <h2 class="title is-4"> Convergence Acceleration </h2>
+            <div class="content">
+                We compare the wall times of each framework to make
+                the algorithm converge with the same resource configuration.
+            </div>
+            <div class="block box">
+                <div class="columns is-mobile is-centered is-multiline is-1 is-variable">
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/images/s1.png" alt="out"/>
+                        </figure>
+                        <figure class="image">
+                            <img src="./resources/images/s2.png" alt="out"/>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <h2 class="title is-4"> Scalability Evaluation </h2>
+            <div class="content">
+                In order to evaluate the scalability of SADMA for large-scale multi-agent environments, 
+                we constructed an environment containing 1225 agents based on the CityFlow 
+                environment, as well as a replenishment environment containing 1000 agents.
+            </div>
+            <div class="block box">
+                <div class="columns is-mobile is-centered is-multiline is-1 is-variable">
+                    <div class="column is-one-quarter-mobile">
+                        <figure class="image">
+                            <img src="./resources/images/d1.png" alt="out"/>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+    </div>
+    <footer class="footer pt-5 pb-5">
+        <div class="content has-text-centered">
+            <p>
+                Page source code borrowed from 
+                <a href="https://mazpie.github.io"><strong>Pietro Mazzaglia</strong></a>.
+                <br>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
