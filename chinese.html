@@ -38,35 +38,32 @@
                 <span class="icon is-small"><i class="fa-brands fa-github" aria-hidden="true"></i></span>
                 <span>Code</span>
             </a>
-            <a class="button is-rounded" href="./chinese.html">
-                <span>中文版</span>
+            <a class="button is-rounded" href="./index.html">
+                <span>English</span>
             </a>
         </div>
 
         <!-- Abstract -->
         <div class="block box" class="has-text-centered">
             <div class="has-text-centered">
-                <h2 class="title is-3"> Abstract </h2>
+                <h2 class="title is-3"> 摘要 </h2>
                 <p class="is-size-5">
-                    Multi-agent Reinforcement Learning (MARL) has shown significant success in solving large-scale complex decision-making problems while facing the challenge of increasing computational cost and training time. 
-                    MARL algorithms often require sufficient environment exploration to achieve good performance, especially for complex environments, where the interaction frequency and synchronous training scheme can severelylimit the overall speed. 
-                    Most existing RL training frameworks, which utilize distributed training for acceleration, focus on simple single-agent settings and are not scalable to extend to large-scale MARL scenarios. 
-                    To address this problem, we introduce a Scalable Asynchronous Distributed Multi-Agent RL training framework called SADMA, which modularizes the training process and executes the modules in an asynchronous and distributed manner for efficient training. 
-                    Our framework is power fully scalable and provides an efficient solution for distributed training of multi-agent reinforcement learning in large-scale complex environments.
+                    多智能体强化学习(MARL)在解决大规模复杂决策问题方面取得了显著的成功，但是同时也面临着计算成本和训练时间大幅增加的挑战。
+                    MARL算法通常需要充分的环境探索才能获得良好的性能，特别是对于复杂环境，传统训练方法中的低交互频率和同步训练会严重限制整体速度。
+                    并且大多数现有的利用分布式训练来加速强化学习的训练框架，专注于简单的单智能体设置，不能扩展到大规模的多智能体强化学习场景。
+                    为了解决这个问题，我们引入了一个可扩展的异步分布式多智能体强化学习训练框架SADMA，它将训练过程模块化，并以异步和分布式的方式执行模块，以实现高效的训练。
+                    该框架具有强大的可扩展性，为大规模复杂环境下多智能体强化学习的分布式训练提供了有效的解决方案。
                 </p>
             </div>
         </div>
 
         <!-- Exp Experiments details  -->
         <div class="block box is-size-4">
-            <h2 class="title is-3"> Flexible Resource Allocation </h2>
+            <h2 class="title is-3"> 灵活的资源分配 </h2>
             <div class="content">
-                Benefiting from the modularized design and unified data transfer interface,
-                each module can be flexibly combined with each other and assigned to different
-                computing nodes in the cluster regardless of the hardware device restrictions.
-                This facilitates deployment on clusters with different resource configurations.
-                Our framework naturally adapts to different resource configurations and thus can
-                fully utilize cluster resources to accelerate training.
+                得益于模块化设计和统一的数据传输接口，使每个模块可以灵活地相互组合，并分配给不同的集群中的计算节点而不受硬件设备的限制。
+                这有助于在具有不同资源配置的集群上进行部署。
+                我们的框架自然地适应不同的资源配置，因此可以充分利用集群资源，加快培训。
             </div>
             <div class="block box">
                 <div class="columns is-mobile is-centered is-multiline is-1 is-variable">
@@ -86,11 +83,10 @@
 
         <!-- Exp Experiments details  -->
         <div class="block box is-size-4">
-            <h2 class="title is-3"> Experiments </h2>
-            <h2 class="title is-4"> Throughput Comparisons </h2>
+            <h2 class="title is-3"> 实验 </h2>
+            <h2 class="title is-4"> 吞吐量比较 </h2>
             <div class="content">
-                We compare to baselines under different resource 
-                configurations for single and multiple machines settings.
+                我们比较了不同资源（单台和多台机器配置）下的基线。
             </div>
             <div class="block box">
                 <div class="columns is-mobile is-centered is-multiline is-1 is-variable">
@@ -102,10 +98,9 @@
                     </div>
                 </div>
             </div>
-            <h2 class="title is-4"> Convergence Acceleration </h2>
+            <h2 class="title is-4"> 收敛加速 </h2>
             <div class="content">
-                We compare the wall times of each framework to make
-                the algorithm converge with the same resource configuration.
+                我们比较了每个框架的收敛时间，使不同算法在相同的资源配置不同框架下收敛。
             </div>
             <div class="block box">
                 <div class="columns is-mobile is-centered is-multiline is-1 is-variable">
@@ -119,11 +114,9 @@
                     </div>
                 </div>
             </div>
-            <h2 class="title is-4"> Scalability Evaluation </h2>
+            <h2 class="title is-4"> 可扩展性评估 </h2>
             <div class="content">
-                In order to evaluate the scalability of SADMA for large-scale multi-agent environments, 
-                we constructed an environment containing 1225 agents based on the CityFlow 
-                environment, as well as a replenishment environment containing 1000 agents.
+                为了评估SADMA在大规模多智能体环境下的可扩展性，我们在CityFlow环境的基础上构建了一个包含1225个智能体的环境，以及一个包含1000个agent的物流环境。
             </div>
             <div class="block box">
                 <div class="columns is-mobile is-centered is-multiline is-1 is-variable">
